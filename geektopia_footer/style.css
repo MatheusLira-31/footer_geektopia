@@ -30,9 +30,8 @@ body {
     max-width: 150px;
 }
 
-
 .footer-social a {
-    margin:10px;
+    margin: 10px;
     display: inline-block;
 }
 
@@ -56,19 +55,18 @@ body {
     text-decoration: none;
 }
 
-
-.footer-apps img{
+.footer-apps img {
     height: auto;
     max-width: 150px;
-
 }
 
 .footer-apps a {
     display: inline-block;
-    margin:  0px 10px 0 0;
+    margin: 0 10px 0 0;
     vertical-align: middle;
 }
-.footer-section_payment, .footer-section_certifications{
+
+.footer-section_payment, .footer-section_certifications {
     display: inline-block;
 }
 
@@ -78,25 +76,38 @@ body {
     margin: 5px;
 }
 
-.certifications-logos img{
+.certifications-logos img {
     max-width: 150px;
     margin-right: 50px;
 }
 
-
-
-.payment {
+.payment, .certifications {
     flex-basis: 100%;
 }
 
-.certifications {
-    flex-basis: 100%;
-}
-.sobre{
+.sobre {
     border-top: 1px solid #555;
 }
-.sobre h4{
+
+.sobre h4 {
     font-size: 30px;
+}
+
+.sobre p {
+    font-size: 18px;
+}
+
+.direitos {
+    border-top: 1px solid #555;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#prgf1 {
+    margin-right: 50px;
 }
 
 @media (max-width: 768px) {
@@ -110,12 +121,28 @@ body {
         text-align: center;
     }
 
-    .footer-apps a {
+    .footer-social, .footer-apps, .payment-methods, .certifications-logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-apps a, .payment-methods img, .certifications-logos img {
         margin: 5px;
     }
-    .footer-section_certifications img, .footer-section_payment img{
-        margin: 10px;
-        display: flex;
+
+    .footer-section_payment h4, .footer-section_certifications h4 {
+        text-align: center;
+    }
+
+    .direitos {
         align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #prgf1 {
+        margin: 10px 0;
     }
 }
